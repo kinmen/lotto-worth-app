@@ -3,11 +3,16 @@
 {% block title %}{{title}}{% endblock %}
 
 {% block content %}
-    <ul class="menu">
-        <li><a href="{{path.index}}">Home</a></li>
-        <li><a href="{{path.about}}">About</a></li>
-    </ul>
+    <form id = "calcform"> 
+    	Jackpot:
+    	<input id = "jackpot" type = "text" name = "jackpot"><br>
+    	Probability:
+    	<input id = "probability" type = "text" name = "probability"><br>
+    	Estimated number of tickets:
+    	<input id = "tickets" type = "text" name = "tickets"><br>
+    	<button id = "calcbtn" type = "submit">Calculate Expected Value</button><br>
+    	Expected Value:
+    	<input id = "expected-value" type = "text" name = "expected-value" readonly><br>
 
-    <h1>{{title}}</h1>
-    <p>This is the homepage. AKA Index.</p>
+    </form>
 {% endblock %}
