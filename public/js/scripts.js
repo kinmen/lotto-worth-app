@@ -1,1 +1,1 @@
-console.log("here is file one"),console.log("another file!");
+$(function(){var a=function(){var a=$("#jackpot").val(),e=$("#probability").val(),t=$("#tickets").val(),l=parseFloat(a.replace(/,/g,"")),c=parseFloat(e.replace(/,/g,"")),p=parseFloat(t.replace(/,/g,"")),r=l/p*(1-Math.exp(-1*p*c));$("#expected-value").val(r)};$("#calcform input").change(function(e){e.preventDefault(),a()})});
