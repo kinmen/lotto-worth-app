@@ -1,11 +1,84 @@
-body{
-    background-color:#DDD;
+* {
+	font-family: "Arial Black", Gadget, sans-serif;
 }
 
-h1 {
+html {
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	margin: 0;
+    background-color:#00abf0;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+0,00abf0+100,00abf0+100 */
+    background: #e5e5e5; /* Old browsers */
+    background: -moz-radial-gradient(top left, ellipse cover, #e5e5e5 0%, #00abf0 100%, #00abf0 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(top left, ellipse cover, #e5e5e5 0%,#00abf0 100%,#00abf0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at top left, #e5e5e5 0%,#00abf0 100%,#00abf0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#00abf0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.table-wrapper h1 {
     background-color: #217FD2;
-    border-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #0E62AD;
+    border-radius:10px 10px 0px 0px;
     text-align: center;
     color: #fff;
     padding: .2em;
+    margin: 0px auto;
+
+}
+
+.table-wrapper{
+	display: table;
+	width:50%;
+	margin: 25px auto;
+	background: #36B2E0;
+	border-radius: 10px;
+	border-style: solid;
+    border-width: 2px;
+    border-color: #124c80;
+}
+
+
+.table{
+	display:table;
+	width:100%;
+}
+
+.table-row{
+	display: table-row;
+	width:100%;
+}
+
+.table-cell{
+	display: table-cell;
+	width:50%;
+	font-size:23px;
+	padding: 15px 23px;
+	border-top:1px solid #0E62AD;
+}
+
+.table-cell.input{
+	border-left:1px solid #0E62AD;
+	background: #C2DCE6;
+}
+
+.table input {
+	width:100%;
+	box-sizing:border-box;
+	font-size:23px;
+}
+
+.table-cell.output{
+	background:#FAC931;
+	border-bottom-right-radius: 10px;
+}
+
+.table-cell.output-name{
+	background:#FAC931;
+	border-bottom-left-radius: 10px;
+
 }

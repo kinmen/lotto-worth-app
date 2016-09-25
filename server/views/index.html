@@ -3,16 +3,32 @@
 {% block title %}{{title}}{% endblock %}
 
 {% block content %}
-    <form id = "calcform"> 
-    	Jackpot:
-    	<input id = "jackpot" type = "text" name = "jackpot"><br>
-    	Probability:
-    	<input id = "probability" type = "text" name = "probability"><br>
-    	Estimated number of tickets:
-    	<input id = "tickets" type = "text" name = "tickets"><br>
-    	<button id = "calcbtn" type = "submit">Calculate Expected Value</button><br>
-    	Expected Value:
-    	<input id = "expected-value" type = "text" name = "expected-value" readonly><br>
+<div class = "table-wrapper">
+    <h1>Lottery Ticket Expected Value Calculator</h1>
+    <form id = "calcform" class = "table">
+        <span class = "table-row table-input">
+            <div class = "table-cell input-name">Jackpot:</div>
+            <div class = "table-cell input"><input id = "jackpot" type = "text" name = "jackpot"></div>
+            
+        </span>
+
+        <span class = "table-row table-input">
+    	   <div class = "table-cell input-name">Probability:</div>
+    	   <div class = "table-cell input"><input id = "probability" type = "text" name = "probability"></div>
+        </span>
+
+        <span class = "table-row table-input">
+    	   <div class = "table-cell input-name">Estimated number of tickets:</div>
+    	   <div class = "table-cell  input"><input id = "tickets" type = "text" name = "tickets"></div>
+        </span>
+
+    	<!-- <button id = "calcbtn" type = "submit">Calculate Expected Value</button><br> -->
+
+        <span class = "table-row table-output">
+    	   <div class = "table-cell output-name">Expected Value:</div>
+    	   <div class = "table-cell output"><input id = "expected-value" type = "text" name = "expected-value" readonly></div>
+        </span>
 
     </form>
+</div>
 {% endblock %}

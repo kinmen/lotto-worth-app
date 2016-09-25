@@ -1,5 +1,9 @@
 // Base routes for default index/root path, about page, 404 error pages, and others..
+
+
 exports.register = function(server, options, next){
+    const Wreck = require('wreck');
+
 
     server.route([
         {
@@ -25,6 +29,18 @@ exports.register = function(server, options, next){
                     });
                 },
                 id: 'index'
+            }
+        },
+        {
+            method: 'GET',
+            path: '/lottoreport',
+            config: {
+                handler: function(request, reply){
+                    Wreck.get("http://www.lottoreport.com/", (err, res, payload) => {
+                        console.log(res);
+                    });
+                },
+                id: 'lottoreport'
             }
         },
         {

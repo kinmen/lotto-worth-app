@@ -1,6 +1,6 @@
 $(function() {
-	$("#calcform").submit(function(e) {
-		e.preventDefault();
+
+	var updateCalcution = function () {
 		var jackpot = $("#jackpot").val();
 		var probability = $("#probability").val();
 		var tickets = $("#tickets").val();
@@ -14,5 +14,10 @@ $(function() {
 
 
 		$("#expected-value").val(ev);
+	}
+
+	$("#calcform input").change(function(e) {
+		e.preventDefault();
+		updateCalcution();
 	})
 })
