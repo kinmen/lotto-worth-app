@@ -36,7 +36,7 @@ exports.register = function(server, options, next){
             path: '/lottoreport',
             config: {
                 handler: function(request, reply){
-                    Wreck.get("http://www.lottoreport.com/", (err, res, payload) => {
+                    Wreck.get("http://www.lottoreport.com/", function(err, res, payload) {
                         console.log(res);
                     });
                 },
