@@ -12,7 +12,7 @@
 
   "scripts": {
     "start": "node server.js",
-    "postinstall": "bower install"
+    "postinstall": "bower install && gulp"
   },
   "dependencies": {
     "bower": "~1.3.9",
@@ -23,9 +23,7 @@
     "hapi-cache-buster": "~0.4.0",
     "hapi-named-routes": "~0.3.0",
     "swig": "~1.4.2",
-    "wreck": "^10.0.0"
-  },
-  "devDependencies": {
+    "wreck": "^10.0.0",
     "gulp": "~3.8.7",
     "gulp-concat": "~2.3.4",
     "gulp-imagemin": "~1.0.1",
