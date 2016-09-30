@@ -24,7 +24,7 @@ $(function() {
 		var ev = (j/t) * (1-Math.exp((-1)*(t)*(p)));
 
 
-		$("#expected-value").val(ev);
+		$("#expected-value").val("$" + ev);
 	}
 
 	$("#calcform input").change(function(e) {

@@ -8,18 +8,18 @@
     <form id = "calcform" class = "table">
         <span class = "table-row table-input">
             <div class = "table-cell input-name">Jackpot:</div>
-            <div class = "table-cell input"><input id = "jackpot" type = "text" name = "jackpot"></div>
+            <div class = "table-cell input"><input id = "jackpot" type = "text" name = "jackpot" placeholder = "100000, 2,000,000 ... etc"></div>
             
         </span>
 
         <span class = "table-row table-input">
     	   <div class = "table-cell input-name">Probability:</div>
-    	   <div class = "table-cell input"><input id = "probability" type = "text" name = "probability"></div>
+    	   <div class = "table-cell input"><input id = "probability" type = "text" name = "probability" placeholder = "0.0023, 1/34220 ..."></div>
         </span>
 
         <span class = "table-row table-input">
     	   <div class = "table-cell input-name">Estimated number of tickets:</div>
-    	   <div class = "table-cell  input"><input id = "tickets" type = "text" name = "tickets"></div>
+    	   <div class = "table-cell  input"><input id = "tickets" type = "text" name = "tickets" placeholder = "100000, 12,000,000 ..."></div>
         </span>
 
     	<!-- <button id = "calcbtn" type = "submit">Calculate Expected Value</button><br> -->
@@ -33,6 +33,6 @@
 </div>
 
 <div id = "info">
-    <p id = "math-formula"><p>$$ \frac jt(1-e^{-tp})  $$</p>
+    <p id = "math-formula"><p>Expected value is calculated using formula $$ \frac jt(1-e^{-tp})  $$ where $j$ is jackpot size, $t$ is number of tickets sold, and $p$ is probability of winning jackpot.</p>
 </div>
 {% endblock %}

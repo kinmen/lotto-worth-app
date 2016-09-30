@@ -77,8 +77,22 @@ body{
 	border-bottom-right-radius: 10px;
 }
 
+.table-cell.output input{
+	background: grey;
+}
+
 .table-cell.output-name{
 	background:#FAC931;
 	border-bottom-left-radius: 10px;
 
+}
+
+#info {
+	width:50%;
+	margin: auto;
+	background:#005dd7;
+	border-radius: 10px;
+}
+#info p {
+	padding: 5px 10px ;
 }
