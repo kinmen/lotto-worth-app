@@ -20,6 +20,8 @@ $(function() {
 		var p = parseFloat(parseFrac(probability.replace(/,/g,'')));
 		var t = parseFloat(tickets.replace(/,/g, ''));
 
+		console.log(j,p,t);
+
 
 		var ev = (j/t) * (1-Math.exp((-1)*(t)*(p)));
 
